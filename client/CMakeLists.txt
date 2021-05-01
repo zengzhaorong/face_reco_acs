@@ -7,7 +7,6 @@ set(CROSS_TOOLSCHAIN /data/arm-linux/toolschain/4.5.1-gec210)		#交叉编译工�
 message("********** MECHINE_ARCH: ${MECHINE_ARCH} **********")
 message("********** LIB_OPENCV_PATH: ${LIB_OPENCV_PATH} **********")
 message("********** LIB_QT5_PATH: ${LIB_QT5_PATH} **********")
-message("********** LIB_FFMPEG_PATH: ${LIB_FFMPEG_PATH} **********")
 
 # project private setting
 set(PROJECT_NAME client_app)

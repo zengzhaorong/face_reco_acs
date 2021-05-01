@@ -16,6 +16,7 @@ void* v4l2cap_handle(void *arg)
 	if(ret != 0)
 	{
 		printf("%s: v4l2cap_init failed.\n", __FUNCTION__);
+		return -1;
 	}
 
 	/* ¿ªÆô²É¼¯ */

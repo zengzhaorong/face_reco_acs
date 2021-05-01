@@ -14,7 +14,7 @@
 #include <pthread.h>
 
 
-#define V4L2_PIX_FMT_XXX	V4L2_PIX_FMT_JPEG	// 摄像头采集格式
+#define V4L2_PIX_FMT_XXX	V4L2_PIX_FMT_MJPEG	// 摄像头采集格式
 #define BUF_NUM		3		// 采集缓存数量
 #define LCD_XRES	640		// LCD像素
 #define LCD_YRES	480

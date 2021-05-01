@@ -56,7 +56,7 @@ int main(int argc, char *argv[])
 	gstMainWork.tid_socket = 0;
 	gstMainWork.tid_sockSend = 0;
 	gstMainWork.tid_v4l2 = 0;
-	gstMainWork.door_fd = 0;
+	//gstMainWork.door_fd = 0;
 
 	// 注册异常信号回调
 	signal(SIGINT, signal_exit_handler);
@@ -82,7 +82,7 @@ int main(int argc, char *argv[])
 	QApplication app(argc, argv);
 	MainWindow win;
 	win.show();
-
+/*
 	gstMainWork.door_fd = open("/dev/door",O_RDWR);
 	if(gstMainWork.door_fd < 0)
 	{
@@ -91,7 +91,7 @@ int main(int argc, char *argv[])
 	}
 	printf("open door dev [fd = %d] success.\n", gstMainWork.door_fd);
 	ioctl(gstMainWork.door_fd, DEV_OFF, DOOR_DEV);		// close door 
-
+*/
 	ret = gOpcvDeal.opencvDeal_init();
 	if(ret < 0)
 	{
@@ -131,6 +131,6 @@ void main_deInit(void)
 	
 	cliSocket_deInit(&cliSocketInfo);
 
-	close(gstMainWork.door_fd);
+	//close(gstMainWork.door_fd);
 }
 

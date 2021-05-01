@@ -19,7 +19,7 @@ struct mainWorkStru
 	pthread_t	tid_sockSend;		// socket send pthread
 
 	// client к╫сп
-	int 		door_fd;		// door device file describe
+	//int 		door_fd;		// door device file describe
 };
 
 

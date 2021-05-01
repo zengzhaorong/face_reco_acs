@@ -161,7 +161,7 @@ void MainWindow::showImage()
 			recOKLabel->show();
 			recOKshow = 1;
 			
-			ioctl(gstMainWork.door_fd, DEV_ON, DOOR_DEV);		// open door 
+			//ioctl(gstMainWork.door_fd, DEV_ON, DOOR_DEV);		// open door 
 		}
 		else if(curTim - beTim >= REC_OK_SHOWTIME)		// ÏÔÊ¾3S,³¬Ê±¹é0
 		{
@@ -172,7 +172,7 @@ void MainWindow::showImage()
 			recOKLabel->hide();
 			recOKshow = 0;
 			
-			ioctl(gstMainWork.door_fd, DEV_OFF, DOOR_DEV);		// close door 
+			//ioctl(gstMainWork.door_fd, DEV_OFF, DOOR_DEV);		// close door 
 			
 			predString = QString("%1:  %2").arg(PRED_FACE_LABEL).arg(cliSocketInfo.predFace);
 			predLabel->setText(predString);
